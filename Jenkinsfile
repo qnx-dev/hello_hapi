@@ -3,10 +3,8 @@
 pipeline {
 
     agent {
-        docker {
-            image 'node'
-            args '-u root'
-        }
+        any
+        tools {nodejs "node-default"}
     }
 
     stages {
